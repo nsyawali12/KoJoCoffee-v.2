@@ -1,6 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button8"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="214dp"
+        android:background="@color/baseColor"
+        android:text="Barang"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="@color/baseColor"
+        android:text="Input"
+        android:textAllCaps="true"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="94dp"
+        android:background="@color/baseColor"
+        android:text="Barang"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="94dp"
+        android:background="@color/baseColor"
+        android:text="Bahan"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="310dp"
+        android:background="@color/baseColor"
+        android:text="Update"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button8"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="213dp"
+        android:background="@color/baseColor"
+        android:text="Barang"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+</RelativeLayout>
