@@ -4,4 +4,162 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="33dp"
+        android:text="Nama Event"
+        android:textSize="16sp"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cari Nama Event"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-1dp"
+        android:text="Ukuran (Panjang x Lebar)"
+        android:textSize="16sp"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_marginTop="-1dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="52dp"
+        android:text="X"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_marginStart="-52dp"
+        android:layout_toEndOf="@+id/textView15"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText14"
+        android:layout_alignStart="@+id/editText13"
+        android:text="Tanggal Event"
+        android:textSize="16sp"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText16"
+        android:layout_alignStart="@+id/editText13"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-1dp"
+        android:text="Harga Sewa"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/editText13"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText17"
+        android:layout_alignStart="@+id/textView14"
+        android:text="Alamat"
+        android:textSize="16sp"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="93dp"
+        android:layout_toEndOf="@+id/textView16"
+        android:text="Update" />
 </RelativeLayout>

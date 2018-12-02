@@ -4,4 +4,89 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="35dp"
+        android:text="Nama Bahan"
+        android:textSize="18sp"
+        android:textColor="@color/text"
+        />
+
+    <EditText
+        android:id="@+id/editText28"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cari nama bahan"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText28"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:text="Harga Bahan"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText30"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView29"
+        android:layout_alignStart="@+id/editText28"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Masukan harga baru"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText30"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:text="Jumlah"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/editText32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView30"
+        android:layout_alignStart="@+id/editText28"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Masukan Jumlah baru"
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="179dp"
+        android:text="Update" />
+
 </RelativeLayout>
