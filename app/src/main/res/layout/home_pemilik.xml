@@ -3,4 +3,158 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@color/baseColor"
+        android:text="Input"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button22"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:background="@color/baseColor"
+        android:text="Menu"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button23"
+        android:layout_centerHorizontal="true"
+        android:background="@color/baseColor"
+        android:text="Modal"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button23"
+        android:layout_alignEnd="@+id/button22"
+        android:background="@color/baseColor"
+        android:text="Pesanan"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button24"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-111dp"
+        android:layout_marginTop="139dp"
+        android:background="@color/baseColor"
+        android:text="Update"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="127dp"
+        android:background="@color/baseColor"
+        android:text="Menu"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button24"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-105dp"
+        android:layout_marginBottom="207dp"
+        android:background="@color/baseColor"
+        android:text="View"
+        android:textAllCaps="true"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button28"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:background="@color/baseColor"
+        android:text="Menu"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button24"
+        android:layout_alignBottom="@+id/button29"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@color/baseColor"
+        android:text="Barang"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button29"
+        android:layout_alignEnd="@+id/button28"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/baseColor"
+        android:text="Laporan"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button28"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:background="@color/baseColor"
+        android:text="Stand"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button30"
+        android:layout_alignTop="@+id/button32"
+        android:background="@color/baseColor"
+        android:text="Bahan"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/button34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button28"
+        android:layout_alignBottom="@+id/button32"
+        android:background="@color/baseColor"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/text" />
 </RelativeLayout>

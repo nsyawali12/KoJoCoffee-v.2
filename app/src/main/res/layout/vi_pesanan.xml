@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
@@ -77,6 +78,85 @@
         android:textColor="@color/text"
         android:textSize="18sp" />
 
-    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="244dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pad_cappucino" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="124dp"
+        android:layout_height="39dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="83dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/pad_espresso" />
+
+    <EditText
+        android:id="@+id/editText46"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="189dp"
+        android:backgroundTint="@color/text"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Jumlah"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText50"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText46"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="187dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Jumlah"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText45"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="151dp"
+        android:text="Total"
+        android:textColor="@color/text"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editText51"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText45"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="103dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+
+
 
 </RelativeLayout>
