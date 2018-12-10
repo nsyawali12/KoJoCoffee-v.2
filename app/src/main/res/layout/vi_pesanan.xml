@@ -4,4 +4,79 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="Tanggal :"
+        android:textColor="@color/text"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editText42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView51"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="-3dp"
+        android:backgroundTint="@color/text"
+        android:ems="10"
+        android:inputType="date"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="confirm" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button20"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="11dp"
+        android:text="Nama Pelanggan"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText45"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView52"
+        android:layout_alignStart="@+id/textView51"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/text"
+        android:backgroundTint="@color/text"/>
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText45"
+        android:layout_alignStart="@+id/textView51"
+        android:text="Pesanan"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+
+    
+
 </RelativeLayout>
