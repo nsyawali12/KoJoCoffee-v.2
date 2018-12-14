@@ -1,92 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
+    android:id="@+id/in_dbarang"
+
     android:background="@drawable/background">
+
 
     <TextView
         android:id="@+id/textView2"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_alignParentStart="true"
+
         android:layout_alignParentTop="true"
+
         android:layout_marginStart="32dp"
+
         android:layout_marginTop="62dp"
+
         android:text="Nama Barang"
+
         android:textColor="@color/text"
+
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText4"
+
+        android:id="@+id/in_nmBrg"
+
         android:layout_width="302dp"
+
         android:layout_height="wrap_content"
+
         android:layout_alignStart="@+id/textView2"
+
         android:layout_alignParentTop="true"
+
         android:layout_marginStart="-4dp"
+
         android:layout_marginTop="86dp"
+
         android:ems="10"
+
         android:inputType="textPersonName"
+
         android:text="Masukan Nama"
+
         android:textColor="@color/text"
+
         android:textSize="16sp"
+
         android:backgroundTint="@color/text"/>
 
     <TextView
+
         android:id="@+id/textView5"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_alignStart="@+id/textView2"
+
         android:layout_alignParentTop="true"
+
         android:layout_marginStart="-2dp"
+
         android:layout_marginTop="131dp"
+
         android:text="Harga Barang"
+
         android:textColor="@color/text"
+
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText5"
+
+        android:id="@+id/in_hrgBrg"
+
         android:layout_width="302dp"
+
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/textView5"
-        android:layout_alignStart="@+id/editText4"
+
+        android:layout_alignStart="@+id/in_nmBrg"
+
         android:layout_marginStart="-1dp"
+
         android:layout_marginTop="0dp"
+
         android:ems="10"
+
         android:inputType="textPersonName"
+
         android:text="Masukan Harga"
+
         android:textColor="@color/text"
+
         android:textSize="16sp"
+
         android:backgroundTint="@color/text"/>
 
     <TextView
+
         android:id="@+id/textView6"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText5"
+
+        android:layout_below="@+id/in_hrgBrg"
+
         android:layout_alignStart="@+id/textView2"
+
         android:text="Jumlah"
+
         android:textColor="@color/text"
+
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText6"
+
+        android:id="@+id/in_jumBrg"
+
         android:layout_width="302dp"
+
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/textView6"
-        android:layout_alignStart="@+id/editText5"
+
+        android:layout_alignStart="@+id/in_hrgBrg"
+
+        android:backgroundTint="@color/text"
+
         android:ems="10"
+
         android:inputType="textPersonName"
+
         android:text="Masukan Jumlah"
+
         android:textColor="@color/text"
-        android:textSize="16sp"
-        android:backgroundTint="@color/text"/>
+
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button12"
+
+        android:id="@+id/but_confBrg"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
+
         android:layout_marginBottom="180dp"
+
         android:text="Confirm" />
 </RelativeLayout>
