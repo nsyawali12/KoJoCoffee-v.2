@@ -20,7 +20,7 @@
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="80dp"
-        android:layout_height="81dp"
+        android:layout_height="80dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="42dp"
@@ -32,12 +32,59 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="213dp"
+        android:background="@color/baseColor"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/man" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="95dp"
+        android:background="@color/baseColor"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/man" />
+
+    <TextView
+        android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="132dp"
+        android:text="Pemilik "
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView43"
+        android:layout_centerVertical="true"
+        android:text="Penyedia Stand"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView43"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="161dp"
-        app:srcCompat="@drawable/man" />
+        android:layout_marginBottom="124dp"
+        android:text="Supplier"
+        android:textColor="@color/text"
+        android:textSize="20sp" />
 
 </RelativeLayout>
