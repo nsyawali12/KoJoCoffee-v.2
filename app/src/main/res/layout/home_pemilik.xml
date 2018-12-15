@@ -15,7 +15,7 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/in_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button22"
@@ -27,10 +27,10 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/in_modal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button23"
+        android:layout_alignTop="@+id/in_menu"
         android:layout_centerHorizontal="true"
         android:background="@color/baseColor"
         android:text="Modal"
@@ -38,10 +38,10 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/in_pesanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button23"
+        android:layout_alignTop="@+id/in_menu"
         android:layout_alignEnd="@+id/button22"
         android:background="@color/baseColor"
         android:text="Pesanan"
@@ -52,7 +52,7 @@
         android:id="@+id/button26"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button24"
+        android:layout_alignStart="@+id/in_modal"
         android:layout_alignParentTop="true"
         android:layout_marginStart="-111dp"
         android:layout_marginTop="139dp"
@@ -61,7 +61,7 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/up_menu"
         android:layout_width="127dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -77,7 +77,7 @@
         android:id="@+id/button28"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button24"
+        android:layout_alignStart="@+id/in_modal"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="-105dp"
         android:layout_marginBottom="207dp"
@@ -87,7 +87,7 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button29"
+        android:id="@+id/vi_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button28"
@@ -99,11 +99,11 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button30"
+        android:id="@+id/vi_barang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button24"
-        android:layout_alignBottom="@+id/button29"
+        android:layout_alignStart="@+id/in_modal"
+        android:layout_alignBottom="@+id/vi_menu"
         android:layout_marginStart="3dp"
         android:layout_marginBottom="-2dp"
         android:background="@color/baseColor"
@@ -112,10 +112,10 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button31"
+        android:id="@+id/vi_laporan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button29"
+        android:layout_alignTop="@+id/vi_menu"
         android:layout_alignEnd="@+id/button28"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="0dp"
@@ -125,7 +125,7 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button32"
+        android:id="@+id/vi_stand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button28"
@@ -137,11 +137,11 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button33"
+        android:id="@+id/vi_bahan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button30"
-        android:layout_alignTop="@+id/button32"
+        android:layout_alignStart="@+id/vi_barang"
+        android:layout_alignTop="@+id/vi_stand"
         android:background="@color/baseColor"
         android:text="Bahan"
         android:textAllCaps="false"
@@ -152,7 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/button28"
-        android:layout_alignBottom="@+id/button32"
+        android:layout_alignBottom="@+id/vi_stand"
         android:background="@color/baseColor"
         android:text="Button"
         android:textAllCaps="false"
