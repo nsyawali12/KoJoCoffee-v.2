@@ -14,7 +14,7 @@ import android.util.Log;
 
 public class database_barang extends SQLiteOpenHelper {
 
-    private static final String TAG = "DatabaseHelper";
+    private static final String TAG = "database_barang";
 
     private static final String TABLE_NAME = "data_barang";
     private static final String COL1 = "Nama Barang";
@@ -72,6 +72,43 @@ public class database_barang extends SQLiteOpenHelper {
      * @return
      */
 
-    // get cursor item blm
+    public Cursor getItemID(String name){
+       SQLiteDatabase db = this.getWritableDatabase();
+       String query = " SELECT " + COL1 + " FROM " + TABLE_NAME +
+               " WHERE " + COL2 + " = '" + name + "'";
+       Cursor data = db.rawQuery(query, null);
+       return data;
+    }
+
+    /**
+     * Update the name field
+     * @param newName
+     * @param id
+     * @param oldName
+     */
+    public void updateName(String newName, int id, String oldName){
+        SQLiteDatabase db = this.getWritetableDatabase();
+        String query = "UPDATE" + TABLE_NAME + " SET " + COL2 +
+                " = '" + newName + "' WHERE " + COL1 + " = '" + id + "'"+
+                " AND " + COL2 + " = '" + oldName + "'";
+        Log.d(TAG, "updateName: query: " + query);
+        Log.d(TAG, "updateName: Setting name to " + newName);
+        db.execSQL(query);
+    }
+
+    /**
+     * Delete from database
+     * @param id
+     * @param name
+     */
+    public void deleteName(int id, String name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = " DELETE FROM " + TABLE_NAME + " WHERE "
+                + COL1 + " = '" + id + "'" +
+                " AND " + COL2 + "= '" + name + "'";
+        Log.d(TAG, "deleteName: query " + query);
+        Log.d(TAG, "deleteName: Deleting " + name + "from database.");
+        db.execSQL(query);
+    }
 
 }
