@@ -17,7 +17,7 @@
         android:textColor="@color/text"/>
 
     <EditText
-        android:id="@+id/editText38"
+        android:id="@+id/in_nmMenu"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView38"
@@ -35,7 +35,7 @@
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText38"
+        android:layout_below="@+id/in_nmMenu"
         android:layout_alignStart="@+id/textView38"
         android:layout_marginStart="0dp"
         android:layout_marginTop="9dp"
@@ -45,11 +45,11 @@
         />
 
     <EditText
-        android:id="@+id/editText39"
+        android:id="@+id/in_hrgMenu"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView39"
-        android:layout_alignStart="@+id/editText38"
+        android:layout_alignStart="@+id/in_nmMenu"
         android:ems="10"
         android:inputType="number"
         android:text="Masukan Harga"
@@ -58,7 +58,7 @@
         android:textColor="@color/text"/>
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/but_confMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
