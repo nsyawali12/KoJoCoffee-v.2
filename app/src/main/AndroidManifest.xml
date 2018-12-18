@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".pilih_akun" />
+        <activity android:name=".home_pemilik" />
+        <activity android:name=".home_pstand" />
+        <activity android:name=".home_supplier" />
+        <activity android:name=".in_dbahan" />
+        <activity android:name=".in_dbarang" />
+        <activity android:name=".in_dstand" />
+        <activity android:name=".in_menu" />
+        <activity android:name=".in_modal" />
+        <activity android:name=".menu" />
+        <activity android:name=".pilih_pesanan" />
+        <activity android:name=".up_bahan" />
+        <activity android:name=".up_barang" />
+        <activity android:name=".up_menu" />
+        <activity android:name=".up_stand" />
+        <activity android:name=".vi_bahan" />
+        <activity android:name=".vi_barang" />
+        <activity android:name=".vi_laporan" />
+        <activity android:name=".vi_pesanan" />
+        <activity android:name=".vi_stand"></activity>
     </application>
 
 </manifest>

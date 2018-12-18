@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/up_bahan"
         android:layout_width="146dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button8"
@@ -12,7 +12,7 @@
         android:layout_marginStart="170dp"
         android:layout_marginTop="214dp"
         android:background="@color/baseColor"
-        android:text="Barang"
+        android:text="Bahan"
         android:textAllCaps="false"
         android:textColor="@color/text" />
 
@@ -29,7 +29,7 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/in_dbarang"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button5"
@@ -42,7 +42,7 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/in_dbahan"
         android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button5"
@@ -69,7 +69,7 @@
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/up_barang"
         android:layout_width="146dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button8"
