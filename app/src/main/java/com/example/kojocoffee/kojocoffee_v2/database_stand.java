@@ -27,13 +27,10 @@ public class database_stand extends SQLiteOpenHelper {
         db.execSQL(sql);
     }
 
-    ;
-
-
     @Override
-    public void onUpgrade(SQLiteDatabase db, int k, int k1) {
+    public void onUpgrade(SQLiteDatabase db, int k, int k1){
         db.execSQL(DATABASE_NAME);
         onCreate(db);
     }
-
 }
+

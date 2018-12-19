@@ -45,6 +45,7 @@ public class in_dstand extends AppCompatActivity {
                         harga.getText().toString() + "','" +
                         alamat.getText().toString() + "')");
                 Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
+                List_Stand.homeStand.RefreshList();
                 finish();
             }
         });

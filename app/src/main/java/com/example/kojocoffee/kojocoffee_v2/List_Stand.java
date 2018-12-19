@@ -39,7 +39,7 @@ public class List_Stand extends AppCompatActivity {
         cursor.moveToFirst();
         for (int cc=0; cc < cursor.getCount(); cc++){
             cursor.moveToPosition(cc);
-            daftar[cc] = cursor.getString(1).toString();
+            daftar[cc] = cursor.getString(0).toString();
         }
         ListStand = (ListView)findViewById(R.id.listStand);
         ListStand.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftar));

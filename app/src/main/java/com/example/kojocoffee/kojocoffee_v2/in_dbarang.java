@@ -1,5 +1,7 @@
 package com.example.kojocoffee.kojocoffee_v2;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,9 +13,8 @@ import android.widget.Toast;
 public class in_dbarang extends AppCompatActivity {
     RelativeLayout in_dbarang;
 
-    String namaBarang;
-    int hargaBarang;
-    int jumBarang;
+    protected Cursor cursor;
+    database_barang dbBarang;
 
     EditText in_nmBrg;
     EditText in_hrgBrg;
@@ -35,9 +36,14 @@ public class in_dbarang extends AppCompatActivity {
         but_confBrg.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                namaBarang = in_nmBrg.getText().toString();
-                hargaBarang = Integer.valueOf(in_hrgBrg.getText().toString());
-                jumBarang = Integer.valueOf(in_jumBrg.getText().toString());
+                SQLiteDatabase db = dbBarang.getWritableDatabase();
+                db.execSQL("insert into data_barang(namaBarang, hargaBarang, jumBarang) values ('" +
+                        in_nmBrg.getText().toString() + "','" +
+                        in_hrgBrg.getText().toString() + "','" +
+                        in_jumBrg.getText().toString() + "')");
+
+                Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
+                finish();
             }
         });
     }

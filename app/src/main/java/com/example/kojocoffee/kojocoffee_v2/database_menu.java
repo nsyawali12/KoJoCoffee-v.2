@@ -1,20 +1,17 @@
-
 package com.example.kojocoffee.kojocoffee_v2;
 
-import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 
+public class database_menu extends SQLiteOpenHelper {
 
-public class database_barang extends SQLiteOpenHelper {
-
-    private static final String DATABASE_NAME = "database_barang.db";
+    private static final String DATABASE_NAME = "database_menu.db";
     private static final int DATABASE_VERSION = 1;
-
-    public database_barang(Context context) {
+    public database_menu(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         // TODO Auto-generated constructor stub
     }
@@ -22,18 +19,13 @@ public class database_barang extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
-        String sql = "create table data_barang(namaBarang text null, hargaBarang integer null, jumBarang integer null);";
+        String sql = "create table data_menu(namaMenu text null, hargaMenu integer null);";
         Log.d("Data", "onCreate: " + sql);
         db.execSQL(sql);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int brg, int brg1) {
-        db.execSQL(DATABASE_NAME);
-        onCreate(db);
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int arg1, int arg2) {
+
     }
-
-
 }
-
-

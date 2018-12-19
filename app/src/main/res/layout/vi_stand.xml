@@ -4,56 +4,98 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <EditText
+        android:id="@+id/idStand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/text"
+        android:ems="10"
+        android:hint="nama stand"
+        android:inputType="textPersonName"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Nama Stand"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
         android:text="Nama Event"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText19"
+        android:id="@+id/namaEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView19"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-2dp"
-        android:layout_marginTop="54dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="93dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="lala"
         android:inputType="textPersonName"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText19"
+        android:layout_alignStart="@+id/namaEvent"
         android:layout_alignParentTop="true"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="103dp"
+        android:layout_marginTop="142dp"
         android:text="Ukuran (Panjang x Lebar)"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText20"
+        android:id="@+id/panjang"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView20"
-        android:layout_alignStart="@+id/editText19"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="lala"
         android:inputType="textPersonName"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
     <TextView
         android:id="@+id/textView21"
@@ -61,93 +103,121 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView20"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="138dp"
+        android:layout_marginTop="177dp"
         android:layout_marginEnd="50dp"
         android:text="X"
-        android:textColor="@color/text"/>
-
-    <EditText
-        android:id="@+id/editText21"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView20"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="-3dp"
-        android:layout_marginEnd="104dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="16sp"
-        android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textColor="@color/text" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText20"
-        android:layout_alignStart="@+id/editText19"
+        android:layout_below="@+id/panjang"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
         android:text="Tanggal Event"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        />
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText22"
+        android:id="@+id/tglEvent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView22"
-        android:layout_alignStart="@+id/editText19"
+        android:layout_alignStart="@+id/namaEvent"
         android:layout_marginStart="-3dp"
         android:layout_marginTop="0dp"
-        android:ems="10"
-        android:inputType="date"
-        android:textSize="16sp"
         android:backgroundTint="@color/text"
-        android:textColor="@color/text"/>
+        android:ems="10"
+        android:hint="lala"
+        android:inputType="date"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText22"
+        android:layout_below="@+id/tglEvent"
         android:layout_alignStart="@+id/textView20"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
         android:text="Harga Sewa"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText23"
+        android:id="@+id/hargaStand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView23"
-        android:layout_alignStart="@+id/editText19"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="lala"
         android:inputType="number"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText23"
+        android:layout_below="@+id/hargaStand"
         android:layout_alignStart="@+id/textView20"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
         android:text="Alamat"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText24"
+        android:id="@+id/alamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView19"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginBottom="147dp"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="114dp"
+        android:backgroundTint="@color/text"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="lala"
+        android:inputType="textPersonName"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="127dp"
+        android:backgroundTint="@color/text"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hargaStand"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="125dp"
+        android:layout_toEndOf="@+id/textView63"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="16sp"
+        android:hint="lala"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
 </RelativeLayout>
