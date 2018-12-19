@@ -19,8 +19,8 @@ public class home_pstand extends AppCompatActivity {
 
         in_dstandBtn.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){
-                Intent startIntent =  new Intent(getApplicationContext(), in_dstand.class);
+            public void onClick(View arg0){
+                Intent startIntent =  new Intent(home_pstand.this, in_dstand.class);
                 startActivity(startIntent);
             }
         });
@@ -28,7 +28,7 @@ public class home_pstand extends AppCompatActivity {
         up_standBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent startIntent =  new Intent(getApplicationContext(), up_stand.class);
+                Intent startIntent =  new Intent(getApplicationContext(), List_Stand.class);
                 startActivity(startIntent);
             }
         });

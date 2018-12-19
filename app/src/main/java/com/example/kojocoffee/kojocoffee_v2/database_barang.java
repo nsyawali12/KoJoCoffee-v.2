@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> 4e8a606e00d7c05e7528a265ae22575682ec34de
 package com.example.kojocoffee.kojocoffee_v2;
 
 import android.content.ContentValues;
@@ -97,6 +100,10 @@ public class database_barang extends SQLiteOpenHelper {
         db.execSQL(query);
     }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4e8a606e00d7c05e7528a265ae22575682ec34de
     /**
      * Delete from database
      * @param id
@@ -113,8 +120,11 @@ public class database_barang extends SQLiteOpenHelper {
     }
 
 }
+<<<<<<< HEAD
+=======
 
 /*
     dibuat untuk database barang, semoga bisa
  */
 
+>>>>>>> 4e8a606e00d7c05e7528a265ae22575682ec34de
