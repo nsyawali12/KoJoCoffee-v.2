@@ -87,7 +87,7 @@ public class database_barang extends SQLiteOpenHelper {
      * @param oldName
      */
     public void updateName(String newName, int id, String oldName){
-        SQLiteDatabase db = this.getWritetableDatabase();
+        SQLiteDatabase db = this.getWritableDatabase();
         String query = "UPDATE" + TABLE_NAME + " SET " + COL2 +
                 " = '" + newName + "' WHERE " + COL1 + " = '" + id + "'"+
                 " AND " + COL2 + " = '" + oldName + "'";
