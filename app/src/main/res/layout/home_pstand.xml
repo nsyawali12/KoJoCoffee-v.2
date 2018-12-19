@@ -54,7 +54,7 @@
         android:layout_marginStart="-3dp"
         android:layout_marginBottom="201dp"
         android:background="@color/baseColor"
-        android:text="Info Stand"
+        android:text="Update Stand"
         android:textAllCaps="false"
         android:textColor="@color/text"
         android:textSize="16sp" />

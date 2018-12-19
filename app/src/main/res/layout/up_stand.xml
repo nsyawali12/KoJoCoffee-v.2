@@ -4,57 +4,83 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <EditText
+        android:id="@+id/idStand"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-74dp"
+        android:backgroundTint="@color/text"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="7dp"
+        android:text="Nama Stand"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="85dp"
         android:text="Nama Event"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/namaEvent"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView13"
         android:layout_alignStart="@+id/textView13"
-        android:layout_marginStart="-4dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="1dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Cari Nama Event"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText13"
+        android:layout_below="@+id/namaEvent"
         android:layout_alignStart="@+id/textView13"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="-1dp"
         android:text="Ukuran (Panjang x Lebar)"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/panjang"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView14"
-        android:layout_alignStart="@+id/editText13"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
         android:inputType="number"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -62,104 +88,110 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/textView14"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="171dp"
         android:layout_marginEnd="52dp"
         android:text="X"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/lebar"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView14"
-        android:layout_marginStart="-52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="-1dp"
         android:layout_toEndOf="@+id/textView15"
+        android:backgroundTint="@color/text"
         android:ems="10"
         android:inputType="number"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText14"
-        android:layout_alignStart="@+id/editText13"
+        android:layout_below="@+id/panjang"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
         android:text="Tanggal Event"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText16"
+        android:id="@+id/tglEvent"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView16"
-        android:layout_alignStart="@+id/editText13"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="0dp"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
         android:inputType="date"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText16"
-        android:layout_alignStart="@+id/editText13"
+        android:layout_below="@+id/tglEvent"
+        android:layout_alignStart="@+id/namaEvent"
         android:layout_marginStart="2dp"
         android:layout_marginTop="-1dp"
         android:text="Harga Sewa"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        />
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText17"
+        android:id="@+id/hargaStand"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView17"
-        android:layout_alignStart="@+id/editText13"
+        android:layout_alignStart="@+id/namaEvent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
         android:inputType="number"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText17"
+        android:layout_below="@+id/hargaStand"
         android:layout_alignStart="@+id/textView14"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
         android:text="Alamat"
-        android:textSize="16sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText18"
+        android:id="@+id/alamat"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView18"
         android:layout_alignStart="@+id/textView14"
-        android:layout_marginStart="-3dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/updateStand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="93dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="52dp"
         android:layout_toEndOf="@+id/textView16"
         android:text="Update" />
 </RelativeLayout>
