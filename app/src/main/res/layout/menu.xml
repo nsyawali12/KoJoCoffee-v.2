@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageButton
+        android:onClick="ShowPopupEspresso"
         android:id="@+id/imageButton"
         android:layout_width="98dp"
         android:layout_height="119dp"
@@ -16,6 +17,7 @@
         app:srcCompat="@drawable/espresso" />
 
     <ImageButton
+        android:onClick="ShowPopupCapucino"
         android:id="@+id/imageButton2"
         android:layout_width="98dp"
         android:layout_height="119dp"
@@ -27,6 +29,7 @@
         app:srcCompat="@drawable/cappucinno" />
 
     <ImageButton
+        android:onClick="ShowPopupLatte"
         android:id="@+id/imageButton6"
         android:layout_width="98dp"
         android:layout_height="119dp"
@@ -38,6 +41,7 @@
         app:srcCompat="@drawable/latte" />
 
     <ImageButton
+        android:onClick="ShowPopupv60"
         android:id="@+id/imageButton7"
         android:layout_width="98dp"
         android:layout_height="119dp"
@@ -49,6 +53,7 @@
         app:srcCompat="@drawable/v60" />
 
     <ImageButton
+        android:onClick="ShowPopupKalita"
         android:id="@+id/imageButton8"
         android:layout_width="98dp"
         android:layout_height="119dp"
@@ -60,6 +65,7 @@
         app:srcCompat="@drawable/kalita" />
 
     <ImageButton
+        android:onClick="ShowPopupCaramel"
         android:id="@+id/imageButton9"
         android:layout_width="98dp"
         android:layout_height="119dp"
