@@ -39,7 +39,8 @@
         <activity android:name=".List_Stand" />
         <activity android:name=".View_List_Stand" />
         <activity android:name=".View_List_Data" />
-        <activity android:name=".vi_stand"></activity>
+        <activity android:name=".vi_stand" />
+        <activity android:name=".database_menu"></activity>
     </application>
 
 </manifest>
