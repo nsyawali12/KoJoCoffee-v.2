@@ -1,69 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
+    android:id="@+id/in_menu"
+
     android:background="@drawable/background">
 
     <TextView
+
         android:id="@+id/textView38"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_alignParentStart="true"
+
         android:layout_alignParentTop="true"
+
         android:layout_marginStart="31dp"
+
         android:layout_marginTop="32dp"
+
         android:text="Nama Menu"
+
         android:textSize="18sp"
+
         android:textColor="@color/text"/>
 
     <EditText
+
         android:id="@+id/in_nmMenu"
+
         android:layout_width="302dp"
+
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/textView38"
+
         android:layout_alignParentStart="true"
+
         android:layout_marginStart="27dp"
+
         android:layout_marginTop="0dp"
+
         android:ems="10"
+
         android:inputType="textPersonName"
+
         android:text="Masukan Nama"
+
         android:textSize="16sp"
+
         android:textColor="@color/text"
+
         android:backgroundTint="@color/text"/>
 
     <TextView
+
         android:id="@+id/textView39"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/in_nmMenu"
+
         android:layout_alignStart="@+id/textView38"
+
         android:layout_marginStart="0dp"
+
         android:layout_marginTop="9dp"
+
         android:text="Harga Menu"
+
         android:textSize="18sp"
-        android:textColor="@color/text"
-        />
+
+        android:textColor="@color/text" />
 
     <EditText
+
         android:id="@+id/in_hrgMenu"
+
         android:layout_width="302dp"
+
         android:layout_height="wrap_content"
+
         android:layout_below="@+id/textView39"
+
         android:layout_alignStart="@+id/in_nmMenu"
+
         android:ems="10"
+
         android:inputType="number"
+
         android:text="Masukan Harga"
+
         android:textSize="16sp"
+
         android:backgroundTint="@color/text"
+
         android:textColor="@color/text"/>
 
     <Button
+
         android:id="@+id/but_confMenu"
+
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
         android:layout_alignParentTop="true"
+
         android:layout_marginStart="17dp"
+
         android:layout_marginTop="194dp"
+
         android:layout_toEndOf="@+id/textView38"
+
         android:text="Confirm" />
+
 </RelativeLayout>

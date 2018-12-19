@@ -21,6 +21,7 @@ public class input_menu extends AppCompatActivity {
 
     Button but_confMenu;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.in_menu);
