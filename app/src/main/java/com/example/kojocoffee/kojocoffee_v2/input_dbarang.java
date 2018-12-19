@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.view.ViewGroup;
 
 
-public class input_dbarang extends MainActivity{
+public class input_dbarang extends AppCompatActivity{
 
     RelativeLayout in_dbarang;
 

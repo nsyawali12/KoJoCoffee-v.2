@@ -1,5 +1,6 @@
 package com.example.kojocoffee.kojocoffee_v2;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -28,4 +29,7 @@ public class database_stand extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int arg1, int arg2) {
 
     }
+=======
+public class database_stand {
+>>>>>>> 4e8a606e00d7c05e7528a265ae22575682ec34de
 }
