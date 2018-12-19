@@ -49,9 +49,10 @@ public class up_stand extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SQLiteDatabase db = dbStand.getWritableDatabase();
-                db.execSQL("update data_stand set namaEvent='"+
+                db.execSQL("update data_stand set idStand='"+
+                        id.getText().toString() +"', namaEvent='" +
                         nama.getText().toString() +"', panjang='" +
-                        panjang.getText().toString()+"', lebar='"+
+                        panjang.getText().toString() +"', lebar='"+
                         lebar.getText().toString() +"', tglEvent='" +
                         tgl.getText().toString() +"', hargaStand='" +
                         harga.getText().toString() +"', alamat='" +

@@ -5,6 +5,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+    <TextView
+        android:id="@+id/textstand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="11dp"
+        android:text="Nama Stand"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
     <EditText
         android:id="@+id/idStand"
         android:layout_width="302dp"
@@ -16,19 +28,7 @@
         android:backgroundTint="@color/text"
         android:ems="10"
         android:hint="Masukan Nama Stand"
-        android:inputType="textPersonName"
-        android:textColor="@color/text"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/textstand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="11dp"
-        android:text="Nama Stand"
+        android:inputType="text"
         android:textColor="@color/text"
         android:textSize="16sp" />
 
