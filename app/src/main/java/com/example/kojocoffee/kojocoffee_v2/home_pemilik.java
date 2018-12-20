@@ -51,7 +51,7 @@ public class home_pemilik extends AppCompatActivity {
         up_menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startIntent =  new Intent(getApplicationContext(), up_menu.class);
+                Intent startIntent =  new Intent(getApplicationContext(), list_menu.class);
                 startActivity(startIntent);
             }
         });
@@ -91,7 +91,7 @@ public class home_pemilik extends AppCompatActivity {
         vi_standBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent startIntent =  new Intent(getApplicationContext(), vi_stand.class);
+                Intent startIntent =  new Intent(getApplicationContext(), View_List_Data.class);
                 startActivity(startIntent);
             }
         });

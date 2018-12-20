@@ -35,9 +35,16 @@
         <activity android:name=".vi_barang" />
         <activity android:name=".vi_laporan" />
         <activity android:name=".vi_pesanan" />
-        <activity android:name=".vi_stand" />
         <activity android:name=".database_stand" />
-        <activity android:name=".List_Stand"></activity>
+        <activity android:name=".List_Stand" />
+        <activity android:name=".View_List_Stand" />
+        <activity android:name=".View_List_Data" />
+        <activity android:name=".vi_stand" />
+        <activity android:name=".database_menu" />
+        <activity android:name=".list_menu" />
+        <activity android:name=".database_pesanan" />
+        <activity android:name=".database_modal" />
+        <activity android:name=".database_laporan"></activity>
     </application>
 
 </manifest>
