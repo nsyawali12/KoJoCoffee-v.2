@@ -1,5 +1,6 @@
 package com.example.kojocoffee.kojocoffee_v2;
 
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -9,8 +10,10 @@ import android.util.Log;
 
 public class database_stand extends SQLiteOpenHelper {
 
+
     private static final String DATABASE_NAME = "database_stand.db";
     private static final int DATABASE_VERSION = 1;
+
     public database_stand(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         // TODO Auto-generated constructor stub
@@ -25,7 +28,9 @@ public class database_stand extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int arg1, int arg2) {
-
+    public void onUpgrade(SQLiteDatabase db, int k, int k1){
+        db.execSQL(DATABASE_NAME);
+        onCreate(db);
     }
 }
+
