@@ -5,158 +5,107 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="30dp"
-        android:text="Tanggal :"
-        android:textColor="@color/text"
-        android:textSize="18sp"/>
-
     <EditText
-        android:id="@+id/editText42"
-        android:layout_width="wrap_content"
+        android:id="@+id/jmlhPesanan"
+        android:layout_width="302dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView51"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="-3dp"
+        android:layout_below="@+id/textView52"
+        android:layout_alignStart="@+id/Textview"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="83dp"
         android:backgroundTint="@color/text"
         android:ems="10"
-        android:inputType="date"
+        android:hint="Jumlah Pesanan"
+        android:inputType="textPersonName"
         android:text=""
         android:textColor="@color/text"
-        android:textSize="18sp" />
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
-    <Button
-        android:id="@+id/button20"
+    <TextView
+        android:id="@+id/Textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp"
-        android:text="confirm" />
+        android:layout_alignEnd="@+id/textView52"
+        android:layout_marginTop="95dp"
+        android:text="Jumlah Pesanan"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView52"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button20"
-        android:layout_alignStart="@+id/textView51"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="11dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="20dp"
         android:text="Nama Pelanggan"
         android:textColor="@color/text"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText45"
+        android:id="@+id/namaPelanggan"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView52"
-        android:layout_alignStart="@+id/textView51"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="0dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        android:textSize="16sp"
-        android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
-
-    <TextView
-        android:id="@+id/textView53"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText45"
-        android:layout_alignStart="@+id/textView51"
-        android:text="Pesanan"
-        android:textColor="@color/text"
-        android:textSize="18sp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="124dp"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginBottom="244dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/pad_cappucino" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="124dp"
-        android:layout_height="39dp"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="-1dp"
-        android:layout_marginEnd="83dp"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/pad_espresso" />
-
-    <EditText
-        android:id="@+id/editText46"
-        android:layout_width="69dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="61dp"
-        android:layout_marginBottom="189dp"
+        android:layout_alignStart="@+id/textView52"
+        android:layout_marginTop="7dp"
         android:backgroundTint="@color/text"
         android:ems="10"
-        android:inputType="number"
-        android:text="Jumlah"
+        android:hint="Nama Pelanggan"
+        android:inputType="textPersonName"
+        android:text=""
         android:textColor="@color/text"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/editText50"
-        android:layout_width="69dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText46"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="143dp"
-        android:layout_marginBottom="187dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Jumlah"
-        android:textColor="@color/text"
-        android:textSize="18sp"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
 
     <TextView
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText45"
+        android:layout_alignStart="@+id/namaPelanggan"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="151dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="308dp"
         android:text="Total"
         android:textColor="@color/text"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText51"
+        android:id="@+id/totalHarga"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText45"
+        android:layout_alignStart="@+id/namaPelanggan"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginBottom="103dp"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="263dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="Total Harga"
         android:inputType="number"
         android:text=""
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
 
-
+    <Button
+        android:id="@+id/delPesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="156dp"
+        android:text="DELETE" />
 
 
 </RelativeLayout>

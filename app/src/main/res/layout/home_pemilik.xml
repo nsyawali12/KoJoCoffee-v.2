@@ -148,13 +148,13 @@
         android:textColor="@color/text" />
 
     <Button
-        android:id="@+id/button34"
+        android:id="@+id/vi_pesanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/button28"
         android:layout_alignBottom="@+id/vi_stand"
         android:background="@color/baseColor"
-        android:text="Button"
+        android:text="Pesanan"
         android:textAllCaps="false"
         android:textColor="@color/text" />
 </RelativeLayout>

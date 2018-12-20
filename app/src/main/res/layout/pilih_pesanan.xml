@@ -170,7 +170,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="7dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginEnd="@+id/textView55"
         android:backgroundTint="@color/black"
         android:ems="10"
         android:hint="Masukan Nama"
@@ -361,6 +361,8 @@
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/namaPesanan"
         android:layout_alignBottom="@+id/totalHarga"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/baseColor"
         android:text="Confirm"
         android:textColor="@color/text" />

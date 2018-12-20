@@ -48,17 +48,16 @@
 
         android:layout_marginTop="0dp"
 
+        android:backgroundTint="@color/text"
+
         android:ems="10"
+
+        android:hint="Masukan Nama"
 
         android:inputType="textPersonName"
 
-        android:text="Masukan Nama"
-
-        android:textSize="16sp"
-
         android:textColor="@color/text"
-
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
 
@@ -94,17 +93,16 @@
 
         android:layout_alignStart="@+id/in_nmMenu"
 
+        android:backgroundTint="@color/text"
+
         android:ems="10"
+
+        android:hint="Masukan Harga"
 
         android:inputType="number"
 
-        android:text="Masukan Harga"
-
-        android:textSize="16sp"
-
-        android:backgroundTint="@color/text"
-
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <Button
 

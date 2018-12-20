@@ -44,7 +44,9 @@
         <activity android:name=".list_menu" />
         <activity android:name=".database_pesanan" />
         <activity android:name=".database_modal" />
-        <activity android:name=".database_laporan"></activity>
+        <activity android:name=".database_laporan" />
+        <activity android:name=".tgl_pesanan" />
+        <activity android:name=".list_pesanan"></activity>
     </application>
 
 </manifest>

@@ -22,6 +22,7 @@ public class home_pemilik extends AppCompatActivity {
         Button vi_bahanBtn = (Button) findViewById(R.id.vi_bahan);
         Button vi_laporanBtn = (Button) findViewById(R.id.vi_laporan);
         Button vi_standBtn = (Button) findViewById(R.id.vi_stand);
+        Button vi_pesananBtn = (Button) findViewById(R.id.vi_pesanan);
 
 
         in_menuBtn.setOnClickListener(new View.OnClickListener(){
@@ -92,6 +93,14 @@ public class home_pemilik extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent startIntent =  new Intent(getApplicationContext(), View_List_Data.class);
+                startActivity(startIntent);
+            }
+        });
+
+        vi_pesananBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startIntent =  new Intent(getApplicationContext(), tgl_pesanan.class);
                 startActivity(startIntent);
             }
         });

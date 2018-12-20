@@ -35,18 +35,41 @@ public class in_dstand extends AppCompatActivity {
         conf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SQLiteDatabase db = dbStand.getWritableDatabase();
-                db.execSQL("insert into data_stand(idStand, namaEvent, panjang, lebar, tglEvent, hargaStand, alamat) values ('" +
-                        id.getText().toString() + "','" +
-                        nama.getText().toString() + "','" +
-                        panjang.getText().toString() + "','" +
-                        lebar.getText().toString() + "','" +
-                        tgl.getText().toString() + "','" +
-                        harga.getText().toString() + "','" +
-                        alamat.getText().toString() + "')");
-                Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
-                List_Stand.homeStand.RefreshList();
-                finish();
+                if (id.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Nama stand kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (nama.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Nama Event kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (panjang.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Panjang stand kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (lebar.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Lebar stand kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (tgl.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Tanggal event kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                } else if (harga.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Harga stand kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                } if (alamat.getText().toString().matches("")) {
+                    Toast.makeText(getApplicationContext(), "Alamat stand kosong", Toast.LENGTH_SHORT).show();
+                    return;
+                }else {
+                    SQLiteDatabase db = dbStand.getWritableDatabase();
+                    db.execSQL("insert into data_stand(idStand, namaEvent, panjang, lebar, tglEvent, hargaStand, alamat) values ('" +
+                            id.getText().toString() + "','" +
+                            nama.getText().toString() + "','" +
+                            panjang.getText().toString() + "','" +
+                            lebar.getText().toString() + "','" +
+                            tgl.getText().toString() + "','" +
+                            harga.getText().toString() + "','" +
+                            alamat.getText().toString() + "')");
+                    Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_LONG).show();
+                    List_Stand.homeStand.RefreshList();
+                    finish();
+                }
             }
         });
     }

@@ -204,20 +204,21 @@
     <EditText
         android:id="@+id/lebar"
         android:layout_width="127dp"
-        android:backgroundTint="@color/text"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView21"
         android:layout_alignBottom="@+id/hargaStand"
         android:layout_marginStart="63dp"
-        android:layout_marginBottom="125dp"
-        android:layout_toEndOf="@+id/textView63"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="lala"
-        android:textColor="@color/text"
-        android:textSize="16sp"
+        android:layout_marginEnd="-133dp"
+        android:layout_marginBottom="127dp"
+        android:backgroundTint="@color/text"
         android:clickable="false"
         android:cursorVisible="false"
+        android:ems="10"
         android:focusable="false"
-        android:focusableInTouchMode="false" />
+        android:focusableInTouchMode="false"
+        android:hint="lala"
+        android:inputType="textPersonName"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
 </RelativeLayout>
