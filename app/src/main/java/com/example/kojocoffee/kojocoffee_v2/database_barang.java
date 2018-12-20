@@ -33,7 +33,4 @@ public class database_barang extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-
 }
-
-

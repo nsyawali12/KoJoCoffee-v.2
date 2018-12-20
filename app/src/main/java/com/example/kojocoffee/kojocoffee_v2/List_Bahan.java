@@ -46,8 +46,36 @@ public class List_Bahan extends AppCompatActivity{
             daftar[b] = cursor.getString(0).toString();
         }
         ListBahan = (ListView) findViewById(R.id.listBahan);
-        //ListBahan adapter blm, keburu ngantuk bentar
+        ListBahan.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftar));
+        ListBahan.setSelected(true);
+        ListBahan.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
+            public void onItemClick(AdapterView arg0, View dbhn1, int dbhn2, long dbhn3) {
+                final String selection = daftar[dbhn2];
+                final CharSequence[] dialogitem = {"Update", "Delete"};
+                AlertDialog.Builder builder = new AlertDialog.Builder(List_Bahan.this);
+                builder.setTitle("Choose : ");
+                builder.setItems(dialogitem, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        switch (i) {
+                            case 0:
+                                Intent in = new Intent(getApplicationContext(), up_bahan.class);
+                                in.putExtra("namaBahan", selection);
+                                startActivity(in);
+                                break;
+                            case 1:
+                                SQLiteDatabase db = dbBahan.getWritableDatabase();
+                                db.execSQL("delete from data_bahan where namaBahan = '" + selection + "'");
+                                RefreshList();
+                                break;
+                        }
+                    }
+                });
+                builder.create().show();
+
+            }});
+        ((ArrayAdapter)ListBahan.getAdapter()).notifyDataSetInvalidated();
     }
 
 }
