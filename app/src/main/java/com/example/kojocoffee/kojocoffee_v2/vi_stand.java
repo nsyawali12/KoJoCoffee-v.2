@@ -29,8 +29,8 @@ public class vi_stand extends AppCompatActivity {
         alamat = (EditText) findViewById(R.id.alamat);
 
         SQLiteDatabase db = dbStand.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM data_stand WHERE namaEvent = '" +
-                getIntent().getStringExtra("namaEvent") + "'",null);
+        cursor = db.rawQuery("SELECT * FROM data_stand WHERE idStand = '" +
+                getIntent().getStringExtra("idStand") + "'",null);
         cursor.moveToFirst();
         if (cursor.getCount() > 0){
             cursor.moveToPosition(0);

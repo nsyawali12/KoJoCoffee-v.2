@@ -17,25 +17,25 @@
         android:textColor="@color/text" />
 
     <EditText
-        android:id="@+id/editText40"
+        android:id="@+id/namaMenu"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView40"
         android:layout_alignStart="@+id/textView40"
         android:layout_marginStart="-5dp"
         android:layout_marginTop="0dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="Cari nama menu"
         android:inputType="textPersonName"
-        android:text="Cari nama menu"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText40"
+        android:layout_below="@+id/namaMenu"
         android:layout_alignStart="@+id/textView40"
         android:layout_marginStart="0dp"
         android:layout_marginTop="15dp"
@@ -44,20 +44,20 @@
         android:textColor="@color/text"/>
 
     <EditText
-        android:id="@+id/editText41"
+        android:id="@+id/hargaMenu"
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView41"
-        android:layout_alignStart="@+id/editText40"
+        android:layout_alignStart="@+id/namaMenu"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="Masukan harga baru"
         android:inputType="number"
-        android:text="Masukan harga baru"
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/updateMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

@@ -11,26 +11,26 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class View_List_Data extends AppCompatActivity {
+public class list_menu extends AppCompatActivity {
     String[] daftar;
     ListView ListStand;
     Menu menu;
     protected Cursor cursor;
-    database_stand dbstand;
-    public static View_List_Data homeStand;
+    database_menu dbmenu;
+    public static list_menu homeMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list__stand);
 
-        homeStand = this;
-        dbstand = new database_stand(this);
+        homeMenu = this;
+        dbmenu = new database_menu(this);
         RefreshList();
     }
     public void RefreshList(){
-        SQLiteDatabase db = dbstand.getReadableDatabase();
-        cursor = db.rawQuery("SELECT * FROM data_stand", null);
+        SQLiteDatabase db = dbmenu.getReadableDatabase();
+        cursor = db.rawQuery("SELECT * FROM data_menu", null);
         daftar = new String[cursor.getCount()];
         cursor.moveToFirst();
         for (int cc=0; cc < cursor.getCount(); cc++){
@@ -44,8 +44,8 @@ public class View_List_Data extends AppCompatActivity {
 
             public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3){
                 final String selection = daftar[arg2];
-                Intent in = new Intent(getApplicationContext(), vi_stand.class);
-                in.putExtra("idStand", selection);
+                Intent in = new Intent(getApplicationContext(), up_menu.class);
+                in.putExtra("namaMenu", selection);
                 startActivity(in);
             }
         });

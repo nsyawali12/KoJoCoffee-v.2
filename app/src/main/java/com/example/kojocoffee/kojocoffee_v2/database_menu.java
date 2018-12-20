@@ -22,6 +22,18 @@ public class database_menu extends SQLiteOpenHelper {
         String sql = "create table data_menu(namaMenu text null, hargaMenu integer null);";
         Log.d("Data", "onCreate: " + sql);
         db.execSQL(sql);
+        sql = "INSERT INTO data_menu(namaMenu, hargaMenu) VALUES ('espresso', '50000');";
+        db.execSQL(sql);
+        sql = "INSERT INTO data_menu(namaMenu, hargaMenu) VALUES ('capucino', '50000');";
+        db.execSQL(sql);
+        sql = "INSERT INTO data_menu(namaMenu, hargaMenu) VALUES ('latte', '50000');";
+        db.execSQL(sql);
+        sql = "INSERT INTO data_menu(namaMenu, hargaMenu) VALUES ('v60', '50000');";
+        db.execSQL(sql);
+        sql = "INSERT INTO data_menu(namaMenu, hargaMenu) VALUES ('kalita', '50000');";
+        db.execSQL(sql);
+        sql = "INSERT INTO data_menu(namaMenu, hargaMenu) VALUES ('caramel', '50000');";
+        db.execSQL(sql);
     }
 
     @Override

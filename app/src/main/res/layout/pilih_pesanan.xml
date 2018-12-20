@@ -164,7 +164,7 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText52"
+        android:id="@+id/namaPesanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -173,8 +173,8 @@
         android:layout_marginEnd="41dp"
         android:backgroundTint="@color/black"
         android:ems="10"
+        android:hint="Masukan Nama"
         android:inputType="textPersonName"
-        android:text="Masukan Nama"
         android:textColor="@color/black"
         android:textSize="16sp" />
 
@@ -182,7 +182,7 @@
         android:id="@+id/textView56"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText52"
+        android:layout_below="@+id/namaPesanan"
         android:layout_alignStart="@+id/textView55"
         android:layout_marginStart="2dp"
         android:layout_marginTop="12dp"
@@ -191,17 +191,17 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText54"
+        android:id="@+id/idPesanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText52"
-        android:layout_alignStart="@+id/editText52"
+        android:layout_below="@+id/namaPesanan"
+        android:layout_alignStart="@+id/namaPesanan"
         android:layout_marginStart="0dp"
         android:layout_marginTop="-4dp"
         android:backgroundTint="@color/black"
         android:ems="10"
+        android:hint="Masukan No. Pelanggan"
         android:inputType="number"
-        android:text="Masukan No. Pelanggan"
         android:textColor="@color/black"
         android:textSize="16sp" />
 
@@ -343,24 +343,48 @@
         android:textSize="16sp" />
 
     <EditText
-        android:id="@+id/editText64"
+        android:id="@+id/totalHarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView58"
         android:layout_alignStart="@+id/imageView4"
         android:layout_marginTop="-62dp"
         android:ems="10"
+        android:hint="harga"
         android:inputType="textPersonName"
+        android:text="0"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/button48"
+        android:id="@+id/confPesanan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText52"
-        android:layout_alignBottom="@+id/editText64"
+        android:layout_alignEnd="@+id/namaPesanan"
+        android:layout_alignBottom="@+id/totalHarga"
         android:background="@color/baseColor"
         android:text="Confirm"
         android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="-243dp"
+        android:layout_toStartOf="@+id/caramel"
+        android:text="Tanggal : " />
+
+    <EditText
+        android:id="@+id/tglPesanan"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idPesanan"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toEndOf="@+id/textView57"
+        android:ems="10"
+        android:hint="Tanggal"
+        android:inputType="textPersonName|number" />
 
 </RelativeLayout>

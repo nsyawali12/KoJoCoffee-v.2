@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/jumPengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView49"
+        android:layout_alignEnd="@+id/confLaporan"
+        android:layout_marginTop="-73dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="@color/text"
+        android:ems="10"
+        android:hint="pengeluaran"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jumPemasukkan"
+        android:layout_alignStart="@+id/textView47"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="9dp"
+        android:text="Jumlah Pengeluaran"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView46"
@@ -17,22 +46,22 @@
         android:textColor="@color/text"/>
 
     <EditText
-        android:id="@+id/editText43"
+        android:id="@+id/tglLaporan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView46"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="-7dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="Masukan Tanggal"
         android:inputType="date"
-        android:text="Masukan Tanggal"
-        android:textSize="18sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/confLaporan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -47,26 +76,27 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView46"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="-2dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="126dp"
         android:text="Modal"
-        android:textSize="18sp"
-        android:textColor="@color/text" />
+        android:textColor="@color/text"
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText44"
+        android:id="@+id/modal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button21"
+        android:layout_alignEnd="@+id/confLaporan"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="318dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="325dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="modal"
         android:inputType="number"
         android:text=""
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView48"
@@ -81,67 +111,75 @@
         android:textColor="@color/text"/>
 
     <EditText
-        android:id="@+id/editText47"
+        android:id="@+id/jumPemasukkan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView48"
-        android:layout_alignStart="@+id/editText44"
+        android:layout_alignStart="@+id/modal"
         android:layout_marginTop="-292dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="pemasukkan"
         android:inputType="number"
         android:text=""
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText47"
+        android:layout_below="@+id/jumPemasukkan"
         android:layout_alignStart="@+id/textView47"
-        android:text="Jumlah Pengeluaran"
-        android:textSize="18sp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="86dp"
+        android:text="Keuntungan"
         android:textColor="@color/text"
-        />
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText48"
+        android:id="@+id/keuntungan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView49"
-        android:layout_alignEnd="@+id/button21"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="16dp"
+        android:layout_alignEnd="@+id/confLaporan"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
+        android:hint="untung"
         android:inputType="number"
         android:text=""
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText48"
-        android:layout_alignStart="@+id/editText44"
-        android:text="Saldo"
-        android:textSize="18sp"
+        android:layout_below="@+id/keuntungan"
+        android:layout_alignStart="@+id/modal"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/text"
+        android:text="Status"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText49"
+        android:id="@+id/status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView50"
-        android:layout_alignStart="@+id/editText48"
+        android:layout_alignStart="@+id/keuntungan"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/text"
         android:ems="10"
-        android:inputType="number"
+        android:hint="untung/rugi"
+        android:inputType="text|number"
         android:text=""
-        android:textSize="16sp"
         android:textColor="@color/text"
-        android:backgroundTint="@color/text"/>
+        android:textSize="16sp" />
 
 </RelativeLayout>
