@@ -21,7 +21,7 @@ public class in_dbahan extends AppCompatActivity {
     EditText in_hrgBahan;
     EditText in_jumBhn;
 
-    Button but_confBahan;
+    Button but_confBhn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class in_dbahan extends AppCompatActivity {
         in_hrgBahan = (EditText) findViewById(R.id.in_hrgBhn);
         in_jumBhn = (EditText) findViewById(R.id.in_jumBhn);
 
-        but_confBahan = (Button) findViewById(R.id.but_confBhn);
-        but_confBahan.setOnClickListener(new View.OnClickListener(){
+        but_confBhn = (Button) findViewById(R.id.but_confBhn);
+        but_confBhn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 SQLiteDatabase db = dbBahan.getWritableDatabase();
